@@ -1,0 +1,16 @@
+package THJava.Ngay2.Books;
+
+import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
+import org.springframework.test.annotation.Rollback;
+
+import THJava.Ngay2.Books.Models.Book;
+import THJava.Ngay2.Books.Models.Category;
+import THJava.Ngay2.Books.Repositories.BookRepository;
+import THJava.Ngay2.Books.Repositories.CategoryRepository;
+
+@DataJpaTest
+@AutoConfigureTestDatabase(replace = Replace.NONE)
+@Roll
+public class UnitText {
+
+}

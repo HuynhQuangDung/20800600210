@@ -1,0 +1,22 @@
+package THJava.Ngay2.Books.Models;
+
+import java.util.List;
+import javax.persistence.*;
+
+@Entity
+@Table(name = "book")
+public class Book {
+	@Id
+	@Column(name = "book_id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	@Column(name = "title", nullable = false, length = 255)
+	private String title;
+	@Column(name = "author", nullable = false, length = 255)
+	private String author;
+	@Column(name = "price")
+	private Long price;
+	@ManyToOne
+	@JoinColumn(name = "category_id", nullable = false)
+	private Category category;
+}
